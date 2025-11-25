@@ -1,4 +1,4 @@
-# 🧮 Calculadora estilo Windows porem versão Web (Express.js)
+# 🧮 Calculadora estilo Windows versão Web (Express.js)
 
 Este projeto foi desenvolvido como uma atividade prática para a disciplina de **Desenvolvimento Back-end**.
 
