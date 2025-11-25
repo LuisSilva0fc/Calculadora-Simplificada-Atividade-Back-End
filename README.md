@@ -30,6 +30,11 @@ A aplicação consiste em uma réplica funcional da calculadora padrão do Windo
   - JavaScript (Lógica de cálculo e manipulação do DOM)
 
 
+## 🌐 Versão de Teste:
+
+Voce pode visualizar o projeto acessado esse link: https://calculadora-simplificada.netlify.app/
+
+
 ## 📂 Estrutura de Pastas
 
 ```bash
