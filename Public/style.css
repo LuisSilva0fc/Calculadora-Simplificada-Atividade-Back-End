@@ -1,0 +1,117 @@
+/* ROOT E RESET DE ESTILOS */
+:root {
+    --bg-body: #202020;
+    --btn-num: #3b3b3b;
+    --btn-num-hover: #323232;
+    --btn-op: #2a2a2a;
+    --btn-op-hover: #3b3b3b;
+    --btn-blue: #76b9ed;
+    --btn-blue-hover: #69a6d6;
+    --text-white: #ffffff;
+    --text-muted: #a5a5a5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* CORPO DA PÁGINA */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-body);
+    /* Removemos a centralização flex, pois o container vai ocupar tudo */
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; /* Evita barras de rolagem */
+}
+
+/* CONTAINER DA CALCULADORA */
+.calculadora-container {
+    background-color: var(--bg-body);
+    width: 100%;
+    height: 100%; 
+    
+    display: flex;
+    flex-direction: column;
+    border: none; /* Sem bordas, é tela cheia */
+    box-shadow: none;
+}
+
+/* TELA (DISPLAY) */
+.display {
+    /* Ocupa 25% do espaço total */
+    flex: 0 0 25%; 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0 20px 20px 20px;
+    background-color: var(--bg-body);
+    z-index: 10;
+}
+
+.previous-operand {
+    color: var(--text-muted);
+    font-size: 1.5rem; /* Um pouco maior */
+    min-height: 30px;
+    margin-bottom: 5px;
+}
+
+.current-operand {
+    color: var(--text-white);
+    /* Tamanho da fonte dinâmico baseado na altura da tela (vh) */
+    font-size: 8vh; 
+    font-weight: 600;
+    line-height: 1;
+}
+
+/* BOTÕES */
+.buttons-grid {
+    /* Ocupa o restante do espaço (75%) */
+    flex: 1; 
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    
+    /* Gap de 2px para ver as linhas separadoras */
+    gap: 2px; 
+    background-color: #2a2a2a; /* Cor de fundo das linhas (gap) */
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    color: var(--text-white);
+    font-size: 2rem; /* Fonte maior para tela cheia */
+    transition: background-color 0.1s;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+/* Cores dos botões */
+.btn-number { background-color: var(--btn-num); font-weight: bold; }
+.btn-number:hover { background-color: var(--btn-num-hover); }
+
+.btn-op-sec, .btn-operator { background-color: var(--btn-op); font-weight: normal; }
+.btn-op-sec:hover, .btn-operator:hover { background-color: var(--btn-op-hover); }
+
+.btn-equals {
+    background-color: var(--btn-blue);
+    color: #333;
+    font-weight: bold;
+}
+.btn-equals:hover { background-color: var(--btn-blue-hover); }
+
+.span-two { grid-column: span 2; }
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.material-icons { font-size: 2rem; }
