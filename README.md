@@ -56,25 +56,33 @@ Você pode visualizar o projeto acessando esse link: https://calculadora-simplif
 
   - Você pode baixalo nesse repositorio ou digitar no seu terminal o seguinte comando:
 
-    ```git clone https://github.com/LuisSilva0fc/Calculadora-Simplificada-Atividade-Back-End.git```
+    ```
+    git clone https://github.com/LuisSilva0fc/Calculadora-Simplificada-Atividade-Back-End.git
+    ```
 
 **2. Instale as dependências:**
   
   - No terminal, dentro da pasta do projeto digite:**
   
-    ```npm install```
+    ```
+    npm install
+    ```
 
 **3. Inicie o servidor:**
 
   - Ainda no terminal digite:
     
-    ```node app.js```
+    ```
+    node app.js
+    ```
 
 **4. Usar aplicação:**
 
   - Abra o navegador e digite:
 
-    ```http://localhost:3000```
+    ```
+    http://localhost:3000
+    ```
 
 ## 📄 Licença
 
